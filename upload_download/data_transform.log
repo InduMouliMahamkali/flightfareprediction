@@ -1,0 +1,6 @@
+08-13 16:48 root         WARNING  input file given is: Data_Train.csv
+08-13 16:53 root         WARNING  input file given is: Data_Train.xlsx
+08-13 16:53 root         WARNING  the downloaded file name is: train1
+08-13 16:53 root         INFO     the data is read from the file Data_Train.xlsx into pandas
+08-13 16:53 root         INFO     the data is downloaded into the file named: train1
+08-13 16:53 root         INFO     displayed the first five rows of data from file: train1

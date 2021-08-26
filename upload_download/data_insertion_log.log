@@ -1,0 +1,22 @@
+08-25 00:16 werkzeug     INFO      * Restarting with windowsapi reloader
+08-25 00:17 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08-25 00:17 __main__     INFO     initilizing the data for download into csv file
+08-25 00:17 __main__     ERROR    error occured while downloading the data: Error from server: code=2200 [Invalid query] message="keyspace flightfare does not exist"
+08-25 00:17 werkzeug     INFO     127.0.0.1 - - [25/Aug/2021 00:17:29] "[37mPOST /cassandra_download HTTP/1.1[0m" 200 -
+08-25 00:20 __main__     INFO     initializing connectivity to database
+08-25 00:20 cassandra.cluster WARNING  Downgrading core protocol version from 66 to 65 for c7aa929e-6ce4-4ffc-8bf0-6a020c917729-southcentralus.db.astra.datastax.com:29042:47b06205-b2c3-4e3b-966a-58ec645efbca. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+08-25 00:20 cassandra.cluster WARNING  Downgrading core protocol version from 65 to 5 for c7aa929e-6ce4-4ffc-8bf0-6a020c917729-southcentralus.db.astra.datastax.com:29042:47b06205-b2c3-4e3b-966a-58ec645efbca. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+08-25 00:20 cassandra.connection ERROR    Closing connection <AsyncoreConnection(2017599044480) c7aa929e-6ce4-4ffc-8bf0-6a020c917729-southcentralus.db.astra.datastax.com:29042:47b06205-b2c3-4e3b-966a-58ec645efbca> due to protocol error: Error from server: code=000a [Protocol error] message="Beta version of the protocol used (5/v5-beta), but USE_BETA flag is unset"
+08-25 00:20 cassandra.cluster WARNING  Downgrading core protocol version from 5 to 4 for c7aa929e-6ce4-4ffc-8bf0-6a020c917729-southcentralus.db.astra.datastax.com:29042:47b06205-b2c3-4e3b-966a-58ec645efbca. To avoid this, it is best practice to explicitly set Cluster(protocol_version) to the version supported by your cluster. http://datastax.github.io/python-driver/api/cassandra/cluster.html#cassandra.cluster.Cluster.protocol_version
+08-25 00:20 cassandra.policies INFO     Using datacenter 'southcentralus' for DCAwareRoundRobinPolicy (via host 'c7aa929e-6ce4-4ffc-8bf0-6a020c917729-southcentralus.db.astra.datastax.com:29042:47b06205-b2c3-4e3b-966a-58ec645efbca'); if incorrect, please specify a local_dc to the constructor, or limit contact points to local cluster nodes
+08-25 00:20 __main__     INFO     connection established successfully
+08-25 00:20 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08-25 00:20 __main__     INFO     initializing to create a table in given keyspace
+08-25 00:20 __main__     INFO     successfully created table in the required keyspace
+08-25 00:20 werkzeug     INFO     127.0.0.1 - - [25/Aug/2021 00:20:49] "[37mPOST /cassandra_create_table HTTP/1.1[0m" 200 -
+08-25 00:22 __main__     INFO     inserting the bulk data into the database
+08-25 01:34 __main__     INFO     data insertion is completed
+08-25 01:34 werkzeug     INFO     127.0.0.1 - - [25/Aug/2021 01:34:33] "[37mPOST /cassandra_bulk_insert HTTP/1.1[0m" 200 -
+08-25 01:36 __main__     INFO     initilizing the data for download into csv file
+08-25 01:36 __main__     INFO     successfully downloaded the data into csv file
+08-25 01:36 werkzeug     INFO     127.0.0.1 - - [25/Aug/2021 01:36:38] "[37mPOST /cassandra_download HTTP/1.1[0m" 200 -

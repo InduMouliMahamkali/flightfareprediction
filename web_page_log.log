@@ -1,0 +1,30 @@
+08-26 11:16 root         INFO     the model flight_rf.pkl is being loaded
+08-26 11:16 root         INFO     hit the /prediction url to know your ticket price
+08-26 11:16 werkzeug     WARNING   * Debugger is active!
+08-26 11:16 werkzeug     INFO      * Debugger PIN: 571-678-562
+08-26 11:16 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+08-26 11:16 app          INFO     rendering the template to the html page
+08-26 11:16 werkzeug     INFO     127.0.0.1 - - [26/Aug/2021 11:16:45] "[37mGET /prediction HTTP/1.1[0m" 200 -
+08-26 11:16 werkzeug     INFO     127.0.0.1 - - [26/Aug/2021 11:16:45] "[37mGET /static/css/styles.css HTTP/1.1[0m" 200 -
+08-26 11:16 werkzeug     INFO     127.0.0.1 - - [26/Aug/2021 11:16:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+08-26 11:17 app          INFO     ready to take input form the user
+08-26 11:17 app          INFO     the user gave the input for data departure as 2021-08-31T11:16
+08-26 11:17 app          INFO     the day is being extracted from the input 2021-08-31T11:16 the extracted value is 31
+08-26 11:17 app          INFO     the month is being extracted from the input 2021-08-31T11:16 the extracted value is 8
+08-26 11:17 app          INFO     the hour is being extracted from the input 2021-08-31T11:16 the extracted value is 11
+08-26 11:17 app          INFO     the minutes is being extracted from the input 2021-08-31T11:16 the extracted value is 16
+08-26 11:17 app          INFO     the user gave the input for date arrival as 2021-08-31T11:17
+08-26 11:17 app          INFO     the hours is being extracted from the input 2021-08-31T11:17 the extracted value is 11
+08-26 11:17 app          INFO     the minutes is being extracted from the input 2021-08-31T11:17 the extracted value is 17
+08-26 11:17 app          INFO     retrieving the absolute value of 0 from 11 and 11
+08-26 11:17 app          INFO     retrieving the absolute value of 1 from 17 and 16
+08-26 11:17 app          INFO     the user gave the input for total stops as 0
+08-26 11:17 app          INFO     the user gave the input for airlines as Jet Airways
+08-26 11:17 app          INFO     the input given by the users are 1 0 0 0 0 0 0 0 0 0 0
+08-26 11:17 app          INFO     the user gave the input for source as Delhi
+08-26 11:17 app          INFO     the input given by the users are 1 0 0 0
+08-26 11:17 app          INFO     the user gave the input for source as Cochin
+08-26 11:17 app          INFO     the input given by the users are 1 0 0 0 0
+08-26 11:17 app          INFO     displaying the predicted price to the user as: 6907.13
+08-26 11:17 app          WARNING  rendering the results to the user on the interface: 6907.13
+08-26 11:17 werkzeug     INFO     127.0.0.1 - - [26/Aug/2021 11:17:07] "[37mPOST /prediction HTTP/1.1[0m" 200 -

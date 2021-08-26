@@ -1,0 +1,28 @@
+08-15 23:40 root         WARNING  user gave the input path/file as: Test_Set.xlsx
+08-15 23:40 root         WARNING  data successfully loaded from the file/path Test_Set.xlsx
+08-15 23:40 root         INFO     starting all the pre-processing done for the train dataset
+08-15 23:40 numexpr.utils INFO     NumExpr defaulting to 8 threads.
+08-15 23:40 root         WARNING  successfully dropped all null values in the given dataset
+08-15 23:40 root         INFO     successfully changed the required columns into datetime format
+08-15 23:40 root         INFO     successfully extracted day from Date_of_journey and creating a seperate column for day
+08-15 23:40 root         INFO     successfully extracted month from Date_of_Journey and creating a seperate column for month
+08-15 23:40 root         INFO     successfully extracted hours from Dep_Time and dumped the data into new column Dep_Time_hour
+08-15 23:40 root         INFO     successfully extracted minutes from Dep_Time and dumped the data into new column Dep_Time_min
+08-15 23:40 root         WARNING  dropping the original Dep_Time column as we extracted the values form that column
+08-15 23:40 root         INFO     successfully extracted hours from Arrival_Time and dumped the data into new column Arrival_Time_hour
+08-15 23:40 root         INFO     successfully extracted min from Arrival_Time and dumped the data into new column Arrival_Time_min
+08-15 23:40 root         WARNING  dropping the original Arrival_Time column as we extracted the values form that column
+08-15 23:40 root         INFO     successfully extracted hours from Duration column and dumped the data into new column Duration_hours
+08-15 23:40 root         INFO     successfully extracted minutes from Duration column and dumped the data into new column Duration_mins
+08-15 23:40 root         WARNING  dropping the Date_of_Journey, Duration, Additional_Info columns as we extracted the required information
+08-15 23:40 root         INFO     creating dummy variables for Airline and dropping the first dummy column
+08-15 23:40 root         INFO     creating dummy variables for Source and dropping the first dummy column
+08-15 23:40 root         INFO     creating dummy variables for Destination and dropping the first dummy column
+08-15 23:40 root         INFO     successfully mapped the Total_Stops column to 0,1,2,3,4 respectfully
+08-15 23:40 root         WARNING  concatinating all the newly created columns into the main dataframe
+08-15 23:40 root         WARNING  dropping the categorical columns as we dummy encoded them
+08-15 23:40 root         INFO     adding an extra column as this feature is not there in our test dataset
+08-15 23:40 root         INFO     loading our test model for prediction
+08-15 23:40 root         INFO     processing the predction
+08-15 23:40 root         INFO     dumping all our predicted values into a dataframe and showing the results
+08-15 23:40 werkzeug     INFO      * Restarting with windowsapi reloader
