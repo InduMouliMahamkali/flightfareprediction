@@ -1,0 +1,65 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="38">
+            <item index="0" class="java.lang.String" itemvalue="numba" />
+            <item index="1" class="java.lang.String" itemvalue="jupyter-core" />
+            <item index="2" class="java.lang.String" itemvalue="missingno" />
+            <item index="3" class="java.lang.String" itemvalue="pandas-profiling" />
+            <item index="4" class="java.lang.String" itemvalue="backports.shutil-get-terminal-size" />
+            <item index="5" class="java.lang.String" itemvalue="cufflinks" />
+            <item index="6" class="java.lang.String" itemvalue="llvmlite" />
+            <item index="7" class="java.lang.String" itemvalue="mkl-random" />
+            <item index="8" class="java.lang.String" itemvalue="mysql-connector-python" />
+            <item index="9" class="java.lang.String" itemvalue="redis" />
+            <item index="10" class="java.lang.String" itemvalue="mkl-fft" />
+            <item index="11" class="java.lang.String" itemvalue="tables" />
+            <item index="12" class="java.lang.String" itemvalue="jupyter" />
+            <item index="13" class="java.lang.String" itemvalue="ipdb" />
+            <item index="14" class="java.lang.String" itemvalue="pyzmq" />
+            <item index="15" class="java.lang.String" itemvalue="astropy" />
+            <item index="16" class="java.lang.String" itemvalue="anaconda-navigator" />
+            <item index="17" class="java.lang.String" itemvalue="xgboost" />
+            <item index="18" class="java.lang.String" itemvalue="pywin32" />
+            <item index="19" class="java.lang.String" itemvalue="navigator-updater" />
+            <item index="20" class="java.lang.String" itemvalue="xlwings" />
+            <item index="21" class="java.lang.String" itemvalue="win-unicode-console" />
+            <item index="22" class="java.lang.String" itemvalue="tornado" />
+            <item index="23" class="java.lang.String" itemvalue="pyodbc" />
+            <item index="24" class="java.lang.String" itemvalue="chart-studio" />
+            <item index="25" class="java.lang.String" itemvalue="pytest" />
+            <item index="26" class="java.lang.String" itemvalue="Flask-WTF" />
+            <item index="27" class="java.lang.String" itemvalue="colorlover" />
+            <item index="28" class="java.lang.String" itemvalue="wordcloud" />
+            <item index="29" class="java.lang.String" itemvalue="et-xmlfile" />
+            <item index="30" class="java.lang.String" itemvalue="geomet" />
+            <item index="31" class="java.lang.String" itemvalue="prometheus-client" />
+            <item index="32" class="java.lang.String" itemvalue="phik" />
+            <item index="33" class="java.lang.String" itemvalue="backports.functools-lru-cache" />
+            <item index="34" class="java.lang.String" itemvalue="ruamel-yaml" />
+            <item index="35" class="java.lang.String" itemvalue="statsmodels" />
+            <item index="36" class="java.lang.String" itemvalue="Keras" />
+            <item index="37" class="java.lang.String" itemvalue="msgpack" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="dict" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="seaborn.catplot" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
