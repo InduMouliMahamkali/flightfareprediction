@@ -1,8 +1,8 @@
 import pandas as pd
+from matplotlib import pyplot as plt
 from pandas_profiling import ProfileReport
 from IPython.core.display import display
 import numpy as np
-import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
 from sklearn.ensemble import ExtraTreesRegressor
