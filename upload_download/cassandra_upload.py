@@ -2,6 +2,8 @@ from flask import Flask, request
 import cassandra
 import pandas as pd
 import logging
+from cassandra.cluster import Cluster
+from cassandra.auth import PlainTextAuthProvider
 
 print(cassandra.__version__)
 
@@ -10,9 +12,11 @@ logging.basicConfig(filename='data_insertion_log.log', level=logging.INFO,
 
 app = Flask(__name__)
 
+# The main use of this module is to upload the data into the data base and then download the data like
+# a real world experience of gathering of data.
+
 app.logger.info("initializing connectivity to database")
-from cassandra.cluster import Cluster
-from cassandra.auth import PlainTextAuthProvider
+
 
 cloud_config = {
     'secure_connect_bundle': 'C:\\Users\\Mouli\\Documents\\ineuron\\my poroject\\flight '
@@ -28,6 +32,8 @@ app.logger.info("connection established successfully")
 
 @app.route('/cassandra_create_table', methods=['POST'])  # for calling the API from Postman/SOAPUI
 def create_cass_table():
+
+    """this function is all about creating the table in the cassandra data base """
     try:
         app.logger.info("initializing to create a table in given keyspace")
         if request.method == 'POST':
@@ -45,6 +51,9 @@ def create_cass_table():
 
 @app.route('/cassandra_bulk_insert', methods=['POST'])  # for calling the API from Postman/SOAPUI
 def bulk_cass_table():
+
+    """this function is used to insert the bulk data set into the created database with respect to the particular
+    column """
     import csv
     try:
         app.logger.info("inserting the bulk data into the database")
@@ -72,6 +81,8 @@ def bulk_cass_table():
 
 @app.route('/cassandra_download', methods=['POST'])  # for calling the API from Postman/SOAPUI
 def download():
+
+    """this function is used to download the data on the database into a csv file"""
     import csv
     try:
         app.logger.info("initializing the data for download into csv file")

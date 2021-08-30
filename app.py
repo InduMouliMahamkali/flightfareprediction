@@ -4,6 +4,9 @@ import pickle
 import pandas as pd
 import logging as lg
 
+"""This module is all about taking the required information from the user and applying all the preprocessing 
+techniques performed on the original data, so as to predict the price of the flight ticket"""
+
 lg.basicConfig(filename='web_page_log.log', level=lg.INFO, format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
                datefmt='%m-%d %H:%M', filemode='w')
 
@@ -292,10 +295,10 @@ def predict():
                 "the input given by the users are" + ' ' + str(Delhi) + ' ' + str(Kolkata) + ' ' + str(
                     Mumbai) + ' ' + str(Chennai))
 
-            # print(s_Delhi,
-            #     s_Kolkata,
-            #     s_Mumbai,
-            #     s_Chennai)
+            # print(Delhi,
+            #     Kolkata,
+            #     Mumbai,
+            #     Chennai)
 
             # Destination
             # Banglore = 0 (not in column)
@@ -348,23 +351,25 @@ def predict():
                 Hyderabad) + ' ' + str(Kolkata))
 
             # print(
-            #     d_Cochin,
-            #     d_Delhi,
-            #     d_New_Delhi,
-            #     d_Hyderabad,
-            #     d_Kolkata
+            #     Cochin,
+            #     Delhi,
+            #     New_Delhi,
+            #     Hyderabad,
+            #     Kolkata
             # )
 
             #     ['Total_Stops', 'Journey_day', 'Journey_month', 'Dep_hour',
             #    'Dep_min', 'Arrival_hour', 'Arrival_min', 'Duration_hours',
-            #    'Duration_mins', 'Airline_Air India', 'Airline_GoAir', 'Airline_IndiGo',
-            #    'Airline_Jet Airways', 'Airline_Jet Airways Business',
-            #    'Airline_Multiple carriers',
-            #    'Airline_Multiple carriers Premium economy', 'Airline_SpiceJet',
-            #    'Airline_Trujet', 'Airline_Vistara', 'Airline_Vistara Premium economy',
-            #    'Source_Chennai', 'Source_Delhi', 'Source_Kolkata', 'Source_Mumbai',
-            #    'Destination_Cochin', 'Destination_Delhi', 'Destination_Hyderabad',
-            #    'Destination_Kolkata', 'Destination_New Delhi']
+            #    'Duration_mins', 'Air_India', 'GoAir', 'IndiGo',
+            #    'Jet_Airways', 'Jet_Airways_Business',
+            #    'Multiple_carriers',
+            #    'Multiple_carriers_Premium_economy', 'SpiceJet',
+            #    'Trujet', 'Vistara', 'Vistara_Premium_economy',
+            #    'Chennai', 'Delhi', 'Kolkata', 'Mumbai',
+            #    'Cochin', 'Delhi', 'Hyderabad',
+            #    'Kolkata', 'New Delhi']
+
+            # finally after taking all the inputs from the users, and giving it to the model
 
             prediction = model.predict([[
                 Total_Stops,
