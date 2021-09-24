@@ -1,4 +1,4 @@
-# FlightFareEstimatorProject
+# Flight Fare Prediction
 ## Problem Statement:
 
 <p>This project is all about creating an machine learning algorithm, that helps the user to know their flight journey cost by providing the required input. </p>
