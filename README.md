@@ -22,7 +22,8 @@
 <p> Link Heroku : https://flightfare10101.herokuapp.com/prediction </p>
 
 ## UserInterface
-![images](interface.png)
+![plot](./images/interface.png)
+
 
 ## Technologies Used
 <pre> 
